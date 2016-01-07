@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html class=" js ">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>朋友圈星座大调查 - 反馈统计图</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="msapplication-tap-highlight" content="no">
+	<meta name="robots" content="noarchive">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="renderer" content="webkit">
+	<link rel="stylesheet" href="./result/formReset.css">
+	<link rel="stylesheet" href="./result/formGlobal.css">
+	<link href="./result/formGlobal(1).css" rel="stylesheet" type="text/css">
+	<style type="text/css">
+.f_component_example
+{ display:none
+/*position: relative; */; }
+
+.f_component{
+}
+
+h1
+{ font-size:1.2rem; }
+
+.f_aTitle
+{ text-align:center; padding:8px; line-height: 26px;}
+
+.f_infopad
+{ width:100%; margin:2px auto; display:none; }
+
+.f_shown
+{ display:block; }
+
+/*0*/
+.toggle_btn
+{ margin:6px auto; width:96px; height:25px; line-height:20px; text-align:center; }
+
+.toggle_btn_item
+{ display:inline-block; width:30px; height:20px; padding-top:5px; border:1px solid #DBDBDB; color:#555; background-color:#FFF; cursor:pointer; transition:all .2s; -moz-transition:all .2s; -webkit-transition:all .2s; -o-transition:all .2s; }
+
+.toggle_btn .active
+{ background-color:#F3F3F3; box-shadow:0 1px 1px #CFCFCF inset; color:#222; cursor:default; }
+
+span.toggle_btn_bar,span.toggle_btn_detail
+{ border-left-width:0; }
+
+table
+{ border-top:1px solid #B8BCC0; }
+
+tr:nth-child(even)
+{ background:#FFF; }
+
+tr:nth-child(odd)
+{ background:#EAF0F3; }
+
+td
+{ padding:8px; }
+
+.analytics-number
+{ height:128px; text-align:center; position:relative; width:50%; float:left; }
+
+.analytics-number .number-title
+{ left:40%; top:28px; font-size:20px; position:absolute; }
+
+.analytics-number .number-show
+{ line-height: 152px;
+font-size: 34px;
+font-weight: bold;
+color: #1C567A;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+max-width: 100%;
+display: inline-block; }
+
+.f_feedbackViewBtn {
+	display: inline-block;
+	padding: 0 12px 0 28px;
+	border-radius: 2px;
+	color: #FFF;
+	background-color: #3E76A7;
+	text-align: center;
+	line-height: 28px;
+	margin: 0 0 0 30px;
+	background-image: url(http://asset.mikecrm.com/images/icon/feedback_list.png);
+	background-position: 8px 10px;
+	background-repeat: no-repeat;
+	font-size: 12px;
+}
+a.f_feedbackViewBtn:visited { color:#FFF; }
+
+@media screen and (max-width: 768px) {
+	.f_feedbackViewBtn {
+		padding: 0px 0px 0px 12px;
+		margin:0;
+		width:98px;
+		line-height:25px;
+		background-position: 8px 8px;
+		height:26px;
+	}
+
+}
+.toggle_btn_sort{
+    display: inline-block;
+    cursor:pointer;
+    background:url(http://asset.mikecrm.com/images/icon/btn_sort.png) no-repeat;
+    height:27px;
+    width:32px;
+    float:right;
+}
+
+.toggle_btn_sort.desc{
+    background-position:0px -27px;
+}
+
+.toggle_btn_sort.asc{
+    background-position:0px -54px;
+}
+	</style>
+<style type="text/css">html{background-color: #f4f5f0;color:#333333;background-position:left top;}.fs_main{width:640px}.fs_cTitle{font-size:16px;line-height:25px;}.fs_content{font-size:14px;}@media screen and (max-width:640px){div.fs_main{width:100%;}}div.f_share{left:640px} div.f_share_main{width:640px}@media screen and (max-width:862px){div.f_share{display:none;}}div.f_share{background-color:rgba(153, 153, 153, 0.4);}.fs_fixbackground{min-height: 100%; min-width: 1024px; width: 100%; height: auto; position: fixed; top: 0; left: 0;z-index:0;}.fs_cValidate{color:#524a54;}.fs_cDescribe a, .fs_cDescribe a:visited{color:#7a777a}.fs_cDescribe, .fs_cLink, .fs_cLink:visited{color:#7a777a}.fs_cExtraDescribe{color:#7a777a}.fs_sectionDescribe, .fs_imgDescribe{color:#7a777a}.fs_component{background-color: #b9c0ce;color:#524a54}.fs_header{background-color: #364760;color:#f7f7f7;}.fs_main{background-color: #FFF;color:#232323;}.fs_submitBtn{background-color:#364760;color:#fff;box-shadow: 0 2px 4px -2px #4c5d75;}.fs_submitBtn:hover{background-color:#4c5d75}.f_chartViewBtn {color:#fff; background-color: #364760;}.f_chartViewBtn:active{color:#fff}.f_chartViewBtn:visited{color:#fff;}.f_chartViewBtn:hover {background-color: #4c5d75;}.f_copyright .fs_powerby{color:#333;}.Zebra_DatePicker td.dp_selected{background-color:#364760;color:#fff;}.Zebra_DatePicker td.dp_current{color:#4c5d75}</style><style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+.en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+
+.en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}
+</style></head>
+<body>
+<div class="f_wrapper fs_wrapper">
+	<div class="f_main fs_main">
+		<div class="f_header fs_header">
+			<h2 class="f_title fs_title" style="padding-top: 10px;">前20位名单</h2>
+			<p class="f_describe fs_describe"></p>
+		</div>
+				<div class="f_body fs_body">
+			<div class="f_component_example">
+				<h1 class="f_aTitle"></h1>
+				<div class="f_infopad f_chart"></div>
+				<div class="f_infopad f_line f_shown"></div>
+				<div class="f_infopad f_detail"></div>
+			</div>
+		<div class="f_component">
+				<h1 class="f_aTitle">已有100位参与问答</h1>
+				<div class="f_infopad f_chart"></div>
+				<div class="f_infopad f_detail f_shown">
+					<table border="0" cellpadding="0" cellspacing="0" style="width:100%;margin: 12px 0;">
+						<tbody>
+							<tr>
+								<td collpadding="4" align="center" valign="middle" style="width: 70%; text-align:left; ">白羊座</td>
+								<td align="right" valign="middle">100分</td>
+							</tr>
+							<tr>
+								<td collpadding="4" align="center" valign="middle" style="width: 70%; text-align:left; ">金牛座</td>
+								<td align="right" valign="middle">100分</td>
+							</tr>
+							<tr>
+								<td collpadding="4" align="center" valign="middle" style="width: 70%; text-align:left; ">双子座</td>
+								<td align="right" valign="middle">100分</td>
+							</tr>
+							<tr>
+								<td collpadding="4" align="center" valign="middle" style="width: 70%; text-align:left; ">巨蟹座</td>
+								<td align="right" valign="middle">100分</td>
+							</tr>
+							<tr>
+								<td collpadding="4" align="center" valign="middle" style="width: 70%; text-align:left; ">狮子座</td>
+								<td align="right" valign="middle">100分</td>
+							</tr>
+							<tr>
+								<td collpadding="4" align="center" valign="middle" style="width: 70%; text-align:left; ">处女座</td>
+								<td align="right" valign="middle">100分</td>
+							</tr>
+							<tr>
+								<td collpadding="4" align="center" valign="middle" style="width: 70%; text-align:left; ">天秤座</td>
+								<td align="right" valign="middle">100分</td>
+							</tr>
+							<tr>
+								<td collpadding="4" align="center" valign="middle" style="width: 70%; text-align:left; ">水瓶座</td>
+								<td align="right" valign="middle">100分</td>
+							</tr>
+							<tr>
+								<td collpadding="4" align="center" valign="middle" style="width: 70%; text-align:left; ">双鱼座</td>
+								<td align="right" valign="middle">100分</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div></div>
+	</div>
+    </div>
+</body></html>
